@@ -1,0 +1,16 @@
+library(GEOquery)
+library(limma)
+library(affy)
+url <- "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE1nnn/GSE1000/matrix/GSE1000_series_matrix.txt.gz"
+filenm <- "GSE1000_series_matrix.txt.gz"
+if(!file.exists(filenm)) download.file(url, destfile=filenm)
+gse <- getGEO(filename=filenm)
+head(gse)
+class(gse)
+head(exprs(gse))
+raw(esprs(gse))
+raw(exprs(gse))
+list(exprs(gse))
+list(exprs(gse))
+gse
+exprs(gse)
